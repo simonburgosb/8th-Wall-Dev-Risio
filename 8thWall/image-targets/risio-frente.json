@@ -1,0 +1,23 @@
+{
+  "imagePath": "image-targets/risio-frente_luminance.jpg",
+  "metadata": null,
+  "name": "risio-frente",
+  "type": "PLANAR",
+  "properties": {
+    "top": 16,
+    "left": 40,
+    "width": 792,
+    "height": 1056,
+    "isRotated": true,
+    "originalWidth": 872,
+    "originalHeight": 1563
+  },
+  "resources": {
+    "originalImage": "risio-frente_original.jpg",
+    "croppedImage": "risio-frente_cropped.jpg",
+    "thumbnailImage": "risio-frente_thumbnail.jpg",
+    "luminanceImage": "risio-frente_luminance.jpg"
+  },
+  "created": 1794029650555,
+  "updated": 1794029650555
+}

@@ -1,0 +1,23 @@
+{
+  "imagePath": "image-targets/risio-reverso_luminance.jpg",
+  "metadata": null,
+  "name": "risio-reverso",
+  "type": "PLANAR",
+  "properties": {
+    "left": 0,
+    "top": 200,
+    "width": 872,
+    "height": 1163,
+    "isRotated": true,
+    "originalWidth": 872,
+    "originalHeight": 1563
+  },
+  "resources": {
+    "originalImage": "risio-reverso_original.jpg",
+    "croppedImage": "risio-reverso_cropped.jpg",
+    "thumbnailImage": "risio-reverso_thumbnail.jpg",
+    "luminanceImage": "risio-reverso_luminance.jpg"
+  },
+  "created": 1794029650866,
+  "updated": 1794029650866
+}

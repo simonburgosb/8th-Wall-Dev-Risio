@@ -1,0 +1,508 @@
+{
+  "objects": {
+    "47699d9e-18a5-4f88-a4f9-b8be92e8f74a": {
+      "components": {},
+      "geometry": null,
+      "id": "47699d9e-18a5-4f88-a4f9-b8be92e8f74a",
+      "light": {
+        "type": "ambient",
+        "intensity": 0.85
+      },
+      "material": null,
+      "name": "Ambient Light",
+      "position": [
+        10,
+        5,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "order": 0.4038940050501252
+    },
+    "ac1989e3-3b71-49e2-a05f-e682aeb18c36": {
+      "components": {},
+      "geometry": null,
+      "id": "ac1989e3-3b71-49e2-a05f-e682aeb18c36",
+      "light": {
+        "intensity": 0.9,
+        "type": "directional"
+      },
+      "material": null,
+      "name": "Directional Light",
+      "position": [
+        20,
+        50,
+        10
+      ],
+      "rotation": [
+        -0.25,
+        0.16,
+        0.0421,
+        0.954
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "order": 0.6644431107322474
+    },
+    "a608ddd9-9379-464d-966f-5d8d8674c83c": {
+      "camera": {
+        "type": "perspective",
+        "xr": {
+          "desktop": "disabled",
+          "xrCameraType": "world",
+          "headset": "disabled",
+          "phone": "AR",
+          "world": {
+            "disableWorldTracking": true
+          }
+        }
+      },
+      "components": {},
+      "geometry": null,
+      "id": "a608ddd9-9379-464d-966f-5d8d8674c83c",
+      "material": null,
+      "name": "Camera",
+      "position": [
+        0,
+        0,
+        2.6
+      ],
+      "rotation": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "order": 1.0308214152219775
+    },
+    "97687039-a728-5ce2-945e-83fd5701139c": {
+      "id": "97687039-a728-5ce2-945e-83fd5701139c",
+      "name": "Tarjeta RISIO · frente",
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "position": [
+        -0.58,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "f2a5da86-b72f-5fe4-a422-a25269d1c2a1": {
+          "id": "f2a5da86-b72f-5fe4-a422-a25269d1c2a1",
+          "name": "SeguimientoTarjeta",
+          "parameters": {
+            "contenido": {
+              "type": "entity",
+              "id": "45fa4259-4895-5c23-91a1-8cb1c77a8451"
+            }
+          }
+        }
+      },
+      "order": 3,
+      "imageTarget": {
+        "name": "risio-frente"
+      }
+    },
+    "45fa4259-4895-5c23-91a1-8cb1c77a8451": {
+      "id": "45fa4259-4895-5c23-91a1-8cb1c77a8451",
+      "name": "Contenido AR",
+      "parentId": "97687039-a728-5ce2-945e-83fd5701139c",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "order": 1
+    },
+    "3016351b-f5e2-5d3e-b2fb-80a03c8f2fe1": {
+      "id": "3016351b-f5e2-5d3e-b2fb-80a03c8f2fe1",
+      "name": "RISIO animado",
+      "parentId": "45fa4259-4895-5c23-91a1-8cb1c77a8451",
+      "position": [
+        0.312,
+        -0.146,
+        0.063
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.266,
+        0.266,
+        0.266
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "c8b7aee3-3da4-5f4a-be76-240027479be6": {
+          "id": "c8b7aee3-3da4-5f4a-be76-240027479be6",
+          "name": "ChangeAnim",
+          "parameters": {}
+        }
+      },
+      "order": 1,
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/RisioAnimations.glb"
+        },
+        "animationClip": "01-Idle",
+        "loop": true
+      }
+    },
+    "46bed309-345c-5327-b455-549fd655712a": {
+      "id": "46bed309-345c-5327-b455-549fd655712a",
+      "name": "Cubo RISIO · sitio web",
+      "parentId": "45fa4259-4895-5c23-91a1-8cb1c77a8451",
+      "position": [
+        -0.321,
+        -0.195,
+        0.08
+      ],
+      "rotation": [
+        -0.0691597,
+        0.13020824,
+        -0.00910505,
+        0.98902975
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": {
+        "type": "box",
+        "width": 0.115,
+        "height": 0.115,
+        "depth": 0.115
+      },
+      "material": {
+        "type": "basic",
+        "color": "#F5F5F5",
+        "roughness": 0.75
+      },
+      "components": {
+        "bcb77678-b54b-5a36-82e3-ed74dd9ec02c": {
+          "id": "bcb77678-b54b-5a36-82e3-ed74dd9ec02c",
+          "name": "abrir-link",
+          "parameters": {
+            "link": "https://simonburgosb.github.io/Risio/"
+          }
+        }
+      },
+      "order": 2
+    },
+    "e01e666c-2074-552c-9a58-33504b6ef260": {
+      "id": "e01e666c-2074-552c-9a58-33504b6ef260",
+      "name": "Logotipo RISIO",
+      "parentId": "46bed309-345c-5327-b455-549fd655712a",
+      "position": [
+        0,
+        0,
+        0.058
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": {
+        "type": "plane",
+        "width": 0.091,
+        "height": 0.092
+      },
+      "material": {
+        "type": "unlit",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/risio-logo.png"
+        }
+      },
+      "components": {},
+      "order": 1
+    },
+    "b3c289dd-50e0-51b2-938a-4e028ee34281": {
+      "id": "b3c289dd-50e0-51b2-938a-4e028ee34281",
+      "name": "Instagram · @risio.renals",
+      "parentId": "45fa4259-4895-5c23-91a1-8cb1c77a8451",
+      "position": [
+        -0.178531,
+        -0.259505,
+        0.042
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.053,
+        0.053,
+        0.053
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "d45044af-9f2f-5a02-8e1a-a46f6b07ae57": {
+          "id": "d45044af-9f2f-5a02-8e1a-a46f6b07ae57",
+          "name": "abrir-link",
+          "parameters": {
+            "link": "https://www.instagram.com/risio.renals/"
+          }
+        }
+      },
+      "order": 3,
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/instagram.glb"
+        }
+      }
+    },
+    "4e5caa0d-f924-5fc9-b638-2eaebb1f2d83": {
+      "id": "4e5caa0d-f924-5fc9-b638-2eaebb1f2d83",
+      "name": "Tarjeta RISIO · reverso",
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "position": [
+        0.58,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "c987e794-3177-5282-a1e0-20cdacf03e2e": {
+          "id": "c987e794-3177-5282-a1e0-20cdacf03e2e",
+          "name": "SeguimientoTarjeta",
+          "parameters": {
+            "contenido": {
+              "type": "entity",
+              "id": "8b40f76c-c32f-5d37-aa34-48457fa5a822"
+            }
+          }
+        }
+      },
+      "order": 4,
+      "imageTarget": {
+        "name": "risio-reverso"
+      }
+    },
+    "8b40f76c-c32f-5d37-aa34-48457fa5a822": {
+      "id": "8b40f76c-c32f-5d37-aa34-48457fa5a822",
+      "name": "Contenido AR",
+      "parentId": "4e5caa0d-f924-5fc9-b638-2eaebb1f2d83",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "order": 1
+    },
+    "81b0e195-59d4-5b87-a2f2-75190234cafd": {
+      "id": "81b0e195-59d4-5b87-a2f2-75190234cafd",
+      "name": "Cubo RISIO · sitio web",
+      "parentId": "8b40f76c-c32f-5d37-aa34-48457fa5a822",
+      "position": [
+        -0.296,
+        -0.182,
+        0.08
+      ],
+      "rotation": [
+        -0.0691597,
+        0.13020824,
+        -0.00910505,
+        0.98902975
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": {
+        "type": "box",
+        "width": 0.115,
+        "height": 0.115,
+        "depth": 0.115
+      },
+      "material": {
+        "type": "basic",
+        "color": "#F5F5F5",
+        "roughness": 0.75
+      },
+      "components": {
+        "2577d09c-cc25-5687-95d6-f1aa7f2d4951": {
+          "id": "2577d09c-cc25-5687-95d6-f1aa7f2d4951",
+          "name": "abrir-link",
+          "parameters": {
+            "link": "https://simonburgosb.github.io/Risio/"
+          }
+        }
+      },
+      "order": 2
+    },
+    "db874122-76ed-5230-b842-2afe83e8463f": {
+      "id": "db874122-76ed-5230-b842-2afe83e8463f",
+      "name": "Logotipo RISIO",
+      "parentId": "81b0e195-59d4-5b87-a2f2-75190234cafd",
+      "position": [
+        0,
+        0,
+        0.058
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": {
+        "type": "plane",
+        "width": 0.091,
+        "height": 0.092
+      },
+      "material": {
+        "type": "unlit",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/risio-logo.png"
+        }
+      },
+      "components": {},
+      "order": 1
+    },
+    "1e38fc41-c44d-5b49-9705-ecdca072b64f": {
+      "id": "1e38fc41-c44d-5b49-9705-ecdca072b64f",
+      "name": "Instagram · @risio.renals",
+      "parentId": "8b40f76c-c32f-5d37-aa34-48457fa5a822",
+      "position": [
+        0.241607,
+        -0.229864,
+        0.058
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.059,
+        0.059,
+        0.059
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "3d4d0a79-6fd6-507d-898d-9619b7545959": {
+          "id": "3d4d0a79-6fd6-507d-898d-9619b7545959",
+          "name": "abrir-link",
+          "parameters": {
+            "link": "https://www.instagram.com/risio.renals/"
+          }
+        }
+      },
+      "order": 3,
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/instagram.glb"
+        }
+      }
+    }
+  },
+  "spaces": {
+    "88453035-dc0f-486d-868a-8ff7c2fda864": {
+      "id": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "name": "Tarjeta RISIO",
+      "activeCamera": "a608ddd9-9379-464d-966f-5d8d8674c83c"
+    }
+  },
+  "entrySpaceId": "88453035-dc0f-486d-868a-8ff7c2fda864"
+}
